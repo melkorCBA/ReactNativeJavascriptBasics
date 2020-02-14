@@ -252,7 +252,7 @@
 //     arr.forEach(function(val){
 //         newArr.push(fn(val));
 //     });
-//     return newArr;
+//     return newArr
 // }
 
 const arr=[1,2,3,4,5];
