@@ -247,17 +247,19 @@
 //     return newArr;
 // }
 
-function map(arr, fn){
-    const newArr=[];
-    arr.forEach(function(val){
-        newArr.push(fn(val));
-    });
-    return newArr
-}
+// function map(arr, fn){
+//     const newArr=[];
+//     arr.forEach(function(val){
+//         newArr.push(fn(val));
+//     });
+//     return newArr
+// }
 
-const arr=[1,2,3,4,5];
-function add(number){
-    return number+1;
-}
-console.log(map(arr,add));
+// const arr=[1,2,3,4,5];
+// function add(number){
+//     return number+1;
+// }
+// console.log(map(arr,add));
+
+
 
