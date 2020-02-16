@@ -261,5 +261,70 @@
 // }
 // console.log(map(arr,add));
 
+//javasript is single thred
+//but has some asycronises functions as well
+//SetTimeout(), XML.HTTPRequest(), jQuery.ajax(), fetch(), database calls
+
+function printOne(){
+    console.log("one");
+}
+
+function printTwo(){
+    console.log('two');
+}
+
+function printThree(){
+    console.log('three');
+}
+
+// printOne();
+// printTwo();
+// printThree();
+
+// setTimeout(printOne,1000);
+// setTimeout(printTwo,0);
+// printThree();
+
+//Asynchronous Javascript
+//1.Execution stack
+//2.Browser APIs
+//3.Function queue
+//4.Event loop
+
+//callbacks -  execute functions once asynchronous call returns value - program doesn't have to halt and wait for the value
+//callback hell
+//promises -  avoid callback hell
+// const url='';
+// fetch(url)
+//     .then(function(res){
+//         return res.json();
+//     })
+//     .then(function(json){
+//         return ({
+//             importantData:json.importantData,
+//         })
+//     })
+//     .then(function(data){
+//         console.log(data);
+//     })
+//     .catch(function(err){
+//         //handel errors
+//     })
+
+//this
+const person = {
+    name:"Chatura",
+    greet:function(){
+        console.log('hello '+ this.name)
+    }
+}
+const friend = {
+    name:"bashika"
+}
+
+friend.greet=person.greet;
+const   greet=person.greet;
+friend.greet();
+greet();
 
 
